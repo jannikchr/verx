@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/HeiKe2022/wz-beta/main/combine.lua"))()
+local name = game.Players.LocalPlayer local target = game:GetService("ReplicatedStorage").Profiles[name.Name].Inventory.Items game:GetService("ReplicatedStorage").Shared.Inventory.SetLockItemState:FireServer(target,true)
